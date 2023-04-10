@@ -1,5 +1,6 @@
 import os
 
+
 def find_and_modify_readme(path):
     readme_file = os.path.join(path, 'readme.md')
     if os.path.exists(readme_file):

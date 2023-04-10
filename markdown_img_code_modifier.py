@@ -1,6 +1,7 @@
 import os
 import re
 
+
 def markdown_img_code_modifier(path):
     for root, dirs, files in os.walk(path):
         for file in files:
@@ -18,5 +19,3 @@ def markdown_img_code_modifier(path):
                 with open(file_path, "w", encoding="utf-8") as f:
                     f.write(new_content)
                 print()
-
-markdown_img_code_modifier(r"A:\Project\Document\docs\documents\GCCEverythingHandbook")
