@@ -7,7 +7,7 @@ def generate_sidebar(note_folder_path, docsify_project_path, docsify_project_not
 
     # 判断是否已存在 _sidebar.md 文件
     if os.path.exists(os.path.join(docsify_project_note_absolute_path, "_sidebar.md")):
-        print("_sidebar.md 已经存在")
+        print("[WARNING]_sidebar.md 已经存在")
         return
     # 获取文件夹中所有文件名
     file_names = [file.name for file in os.scandir(note_folder_path) if file.is_file() and file.name.endswith('.md')]
@@ -27,3 +27,4 @@ def generate_sidebar(note_folder_path, docsify_project_path, docsify_project_not
     # 在指定路径下生成 _sidebar.md 文档
     with open(os.path.join(docsify_project_note_absolute_path, "_sidebar.md"), "w", encoding="UTF-8") as f:
         f.write(content)
+    print("[INFO]_sidebar.md 生成完毕！")

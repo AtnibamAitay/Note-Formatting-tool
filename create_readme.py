@@ -8,7 +8,7 @@ def create_readme(path):
 
     # 检查README.md文件是否存在
     if os.path.exists(path):
-        print('README.md已经存在！')
+        print('[WARNING]README.md已经存在！')
     else:
         # 获取当前时间，用于更新时间
         now = datetime.now().strftime('%Y-%m-%d')
@@ -49,4 +49,4 @@ AtnibamAitay
         with open(path, 'w', encoding='utf-8') as f:
             f.write(content)
 
-        print('README.md文件创建成功！')
+        print('[INFO]README.md文件创建成功！')

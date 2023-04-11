@@ -3,6 +3,7 @@ from datetime import datetime
 
 
 def update_readme_time(note_folder_path):
+
     # 获取当前日期
     now = datetime.now().strftime('%Y-%m-%d')
 
@@ -28,6 +29,6 @@ def update_readme_time(note_folder_path):
         with open(note_file_path, 'w', encoding='utf-8') as f:
             f.writelines(content)
 
-        print('文件更新成功！')
+        print('[INFO]README.md日期更新成功！')
     else:
-        print('未找到需要修改的行！')
+        print('[ERROR]README.md日期更新失败，未找到需要修改的行！')

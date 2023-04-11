@@ -21,4 +21,4 @@ def rename_note_files_name(path):
                     # 重命名文件
                     os.rename(os.path.join(path, filename), os.path.join(path, new_filename))
                     # 输出文件名修改信息
-                    print(f"笔记文件名已重命名：{filename} -> {new_filename}")
+                    print(f"[INFO]笔记文件名已重命名：{filename} -> {new_filename}")

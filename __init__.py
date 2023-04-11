@@ -5,13 +5,13 @@ from rename_note_files_name import rename_note_files_name
 from sidebar_generator import generate_sidebar
 from update_readme_time import update_readme_time
 
-note_folder_path = r"A:\始于不足见，终于不可及\学习\编程\4.前端\1.Vue"
-docsify_project_path = r"Z:\Project\Cardinal-Note-Document\docs"
-docsify_project_note_relative_path = "/document/FrontEnd/Vue/"
-
-# note_folder_path = r"A:\始于不足见，终于不可及\学习\编程\1.Java\2.Java 开发进阶\6.设计模式"
+# note_folder_path = r"A:\始于不足见，终于不可及\学习\编程\4.前端\1.Vue"
 # docsify_project_path = r"Z:\Project\Cardinal-Note-Document\docs"
-# docsify_project_note_relative_path = "/document/Java/JavaAdvancedTechnology/DesignMode/"
+# docsify_project_note_relative_path = "/document/FrontEnd/Vue/"
+
+note_folder_path = r"A:\始于不足见，终于不可及\学习\编程\1.Java\2.Java 开发进阶\6.设计模式"
+docsify_project_path = r"Z:\Project\Cardinal-Note-Document\docs"
+docsify_project_note_relative_path = "/document/Java/JavaAdvancedTechnology/DesignMode/"
 
 docsify_project_note_absolute_path = docsify_project_path + docsify_project_note_relative_path
 commit_info = "提交信息"

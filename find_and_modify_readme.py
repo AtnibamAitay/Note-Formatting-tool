@@ -11,7 +11,7 @@ def find_and_modify_readme(path):
     else:
         readme_file = os.path.join(path, 'README.md')
         if not os.path.exists(readme_file):
-            print("在指定目录中未找到readme.md或README.md文件。")
+            print("[ERROR]在指定目录中未找到readme.md或README.md文件。")
             return
 
     # 打开 README.md 文件并读取其内容
@@ -40,7 +40,7 @@ def find_and_modify_readme(path):
     sidebar_contents = sidebar_contents.replace("readme", "README")
     sidebar_contents = sidebar_contents.replace("Readme", "README")
     if original_sidebar != sidebar_contents:
-        print("该目录下的 _sidebar.md 中的 readme 或者 Readme 被修改为了 README。")
+        print("[INFO]该目录下的 _sidebar.md 中的 readme 或者 Readme 被修改为了 README。")
 
     if original_sidebar != sidebar_contents:
         with open(sidebar_file, 'w', encoding='utf-8') as f:
